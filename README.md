@@ -1,10 +1,10 @@
 # react-webpack-express
-A React and Express application bundled via Webpack
+A React and Express application bundled via Webpack.
 
-A simple react app with express server boiler plate.
+A simple react app with express server boiler plate. No Redux on this, using React context to centralize data.
 
-To install, simply copy to designated folder, run "npm install"
+To install, simply copy to designated folder, run "npm install".
 
-To run application in development mode run "npm run buildDev" followed by "npm start".
+To run application in development mode or production, run "npm run buildDev" or "npm run buildProd" respectively.
 
-To build production version "npm run buildProd"
+"npm start" to start application
