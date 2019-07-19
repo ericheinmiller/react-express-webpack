@@ -3,15 +3,16 @@ import React, { useState } from 'react';
 const Context = React.createContext({});
 
 export const MainStore = (props) => {
-  const [word, setWord] = useState('');
+  const [greeting, setGreeting] = useState('Hello World!');
 
 
   return (
     <Context.Provider value={{
-      word,
+      greeting,
+      setGreeting,
     }}
     >
-    {props.children}
+      {props.children}
     </Context.Provider>
   );
 };

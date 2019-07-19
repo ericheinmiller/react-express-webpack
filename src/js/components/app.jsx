@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { MainStore } from '../context/mainContext';
+import React from 'react';
+import Context, { MainStore } from '../context/mainContext';
 
-export default () => {
-  const [greeting, setGreeting] = useState('Hello World!!!!!!!!');
-
-  return (
+export default () => (
+  <MainStore>
     <div>
-      { greeting }
+      <Context.Consumer>
+        { context => <h1>{ context.greeting }</h1> }
+      </Context.Consumer>
     </div>
-  );
-};
+  </MainStore>
+);
